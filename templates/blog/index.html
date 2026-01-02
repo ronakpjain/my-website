@@ -1,11 +1,3 @@
 {% extends "base.html" %} {% block content %}
-<script>
-    const redirected = sessionStorage.getItem("redirectedToTerminal");
-
-    if (window.innerWidth >= 600 && !redirected) {
-        sessionStorage.setItem("redirectedToTerminal", "true");
-        window.location.href = "{{ url_for('terminal') }}";
-    }
-</script>
 <p>Welcome to my blog</p>
 {% endblock %}
