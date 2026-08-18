@@ -136,35 +136,29 @@
 
 <div class="project-grid">
     <a
-        id="robomasters"
-        class="project-card"
-        href="https://github.com/PurdueRM/Embedded-Control"
-        target="_blank"
-    >
-        <h1>Purdue Robomasters</h1>
-        <ul>
-            <li>Embedded C for robot controls with STM32 microcontrollers</li>
-            <li>
-                Working on complete rewrite of codebase with support for new
-                mainboard
-            </li>
-        </ul>
-    </a>
-
-    <a
         id="per"
         class="project-card"
-        href="https://github.com/PurdueElectricRacing/firmware"
+        href="https://github.com/PurdueElectricRacing/monorepo"
         target="_blank"
     >
         <h1>Purdue Electric Racing</h1>
         <ul>
-            <li>Designing PCBs for testing with some power stuff</li>
             <li>
-                Porting scheduler to FreeRTOS (mostly figuring out headers and
-                cmake)
+                Building firmware for STM32 boards with C, FreeRTOS, FDCAN, SPI,
+                and USART
             </li>
-            <li>Writing HAL for high speed external oscillator</li>
+            <li>
+                Built a bootloader with CRC-checked firmware updates, metadata,
+                and safe handoff to the app
+            </li>
+            <li>
+                Wrote Python tooling for CAN message routing, firmware builds,
+                CRC generation, and recovery images
+            </li>
+            <li>
+                Contributing to the Rust telemetry app and adding DMA-based
+                HALs to make debugging easier
+            </li>
         </ul>
     </a>
 
