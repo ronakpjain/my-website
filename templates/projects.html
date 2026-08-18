@@ -99,16 +99,18 @@
     >
         <h1>Ronfire</h1>
         <ul>
-            <li>Custom HTTP webserver in Rust with Tokio for async</li>
+            <li>Custom HTTP server in Rust with Tokio for async stuff</li>
             <li>
-                Serves responses on a Unix socket (caddy reverse proxy for now)
+                Serves static files and plugin-backed routes over a Unix socket
+                behind Caddy
             </li>
             <li>
-                Working on features for actual usage including config file for
-                dynamic routing and serving
+                Added a compiled-in plugin system with a reverse proxy for
+                fixed upstream endpoints
             </li>
             <li>
-                Maybe write my own reverse proxy with (custom?) HTTP2 support
+                Handles config validation, caching, ranges, and security checks
+                for actual deployment
             </li>
         </ul>
     </a>
