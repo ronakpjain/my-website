@@ -14,6 +14,10 @@ def terminal():
 def projects():
     return render_template("projects.html", title="Projects", alt_home="home")
 
+@app.route("/resume/")
+def resume():
+    return render_template("resume.html", title="Resume", alt_home="home")
+
 @app.route("/blog/")
 def blog():
     return render_template("blog/index.html", title="Blog", alt_home="home")

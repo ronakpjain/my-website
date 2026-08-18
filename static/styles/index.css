@@ -152,6 +152,37 @@ a:hover {
     margin: 3rem auto;
 }
 
+/* Keep the native PDF viewer contained and usable at every viewport size. */
+.resume-page {
+    width: min(90%, 70rem);
+    margin: 0 auto 2rem;
+}
+
+.resume-page h1 {
+    margin: 0 0 0.5rem;
+    text-align: center;
+}
+
+.resume-intro {
+    margin: 0 0 1rem;
+    text-align: center;
+}
+
+.resume-viewer {
+    display: block;
+    width: 100%;
+    height: min(78vh, 72rem);
+    min-height: 32rem;
+    border: 2px solid #fab387;
+    border-radius: 12px;
+    background: #11111b;
+}
+
+.resume-viewer p {
+    padding: 1rem;
+    text-align: center;
+}
+
 .xterm {
     padding: 12px;
 }
@@ -179,5 +210,14 @@ a:hover {
         gap: 1rem;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .resume-page {
+        width: calc(100% - 2rem);
+    }
+
+    .resume-viewer {
+        height: 70vh;
+        min-height: 24rem;
     }
 }

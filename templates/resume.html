@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="resume-page" aria-labelledby="resume-heading">
+    <h1 id="resume-heading">Resume</h1>
+    <p class="resume-intro">View Ronak Jain&rsquo;s resume below.</p>
+    <object
+        class="resume-viewer"
+        type="application/pdf"
+        data="/resume.pdf"
+        title="Ronak Jain resume PDF"
+    >
+        <p>
+            Your browser cannot display this PDF inline.
+            <a href="/resume.pdf">Open the resume PDF</a>.
+        </p>
+    </object>
+</main>
+{% endblock %}
