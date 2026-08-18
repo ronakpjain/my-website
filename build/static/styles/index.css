@@ -152,9 +152,9 @@ a:hover {
     margin: 3rem auto;
 }
 
-/* Keep the native PDF viewer contained and usable at every viewport size. */
+/* Size the native viewer like a portrait US Letter page within the viewport. */
 .resume-page {
-    width: min(90%, 70rem);
+    width: min(42rem, calc(100vw - 2rem), 54vh);
     margin: 0 auto 2rem;
 }
 
@@ -171,8 +171,8 @@ a:hover {
 .resume-viewer {
     display: block;
     width: 100%;
-    height: min(78vh, 72rem);
-    min-height: 32rem;
+    height: auto;
+    aspect-ratio: 8.5 / 11;
     border: 2px solid #fab387;
     border-radius: 12px;
     background: #11111b;
@@ -213,11 +213,6 @@ a:hover {
     }
 
     .resume-page {
-        width: calc(100% - 2rem);
-    }
-
-    .resume-viewer {
-        height: 70vh;
-        min-height: 24rem;
+        width: min(calc(100% - 2rem), 48vh);
     }
 }
