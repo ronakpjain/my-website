@@ -148,8 +148,10 @@ a:hover {
 }
 
 #terminal-container {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 80%;
+    box-sizing: border-box;
     text-align: left;
     border-radius: 12px;
     border: 2px solid #fab387;
@@ -166,7 +168,6 @@ a:hover {
 .resume-page h1 {
     margin: 0 0 0.5rem;
     text-align: center;
-    font-size: clamp(1.35rem, 7vw, 2rem);
 }
 
 .resume-intro {
@@ -204,8 +205,12 @@ a:hover {
     }
 
     .title {
-        font-size: 1.5rem;
         margin-top: 1.5rem;
+    }
+
+    .title,
+    .resume-page h1 {
+        font-size: clamp(1.1rem, 4.5vw, 1.5rem);
     }
 
     .nav-bar {
