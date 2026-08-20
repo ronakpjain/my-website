@@ -142,6 +142,11 @@ a:hover {
     opacity: 0.7;
 }
 
+.terminal-help {
+    margin: 0;
+    text-align: center;
+}
+
 #terminal-container {
     width: 500px;
     height: 80%;
@@ -161,6 +166,7 @@ a:hover {
 .resume-page h1 {
     margin: 0 0 0.5rem;
     text-align: center;
+    font-size: clamp(1.35rem, 7vw, 2rem);
 }
 
 .resume-intro {
@@ -193,6 +199,10 @@ a:hover {
 
 /* --- Responsive tweaks for mobile --- */
 @media (max-width: 600px) {
+    .content {
+        width: calc(100% - 2rem);
+    }
+
     .title {
         font-size: 1.5rem;
         margin-top: 1.5rem;
@@ -213,6 +223,10 @@ a:hover {
     }
 
     .resume-page {
-        width: min(calc(100% - 2rem), 48vh);
+        width: min(100%, 48vh);
+    }
+
+    .resume-viewer {
+        box-sizing: border-box;
     }
 }
